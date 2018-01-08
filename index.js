@@ -49,7 +49,8 @@ module.exports = {
     ],
     "jsx-a11y/aria-props": 2,
     "jsx-a11y/heading-has-content": 0,
-    "jsx-a11y/href-no-hash": 2,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/anchor-is-valid": [2, { "aspects": ["invalidHref"] }],
     "jsx-a11y/label-has-for": 2,
     "jsx-a11y/mouse-events-have-key-events": 2,
     "jsx-a11y/role-has-required-aria-props": 2,
@@ -98,6 +99,6 @@ module.exports = {
     "max-len": ["error", { "code": 100 }],
     "zooshgroup/max-function-lines": ["error", { "maxLines": 30 }],
     "zooshgroup/no-commented-code": ["error"],
-    "zooshgroup/const-uppercase": ["error"]
+    "zooshgroup/const-uppercase": ["error", { globalsOnly: true }]
   }
 };
