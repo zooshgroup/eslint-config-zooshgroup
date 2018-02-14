@@ -69,7 +69,7 @@ module.exports = {
         "ignoreArrayIndexes": true,
         "ignore": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
       }
-    ]
+    ],
     "zooshgroup/max-function-lines": ["error", { "maxLines": 30 }],
     "zooshgroup/no-commented-code": ["error"],
     "zooshgroup/const-uppercase": ["error", { globalsOnly: true }],
