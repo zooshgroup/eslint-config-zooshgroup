@@ -12,19 +12,11 @@ module.exports = {
     "sourceType": "module",
   },
   "rules": {
-    "arrow-parens": [
-      "error",
-      "always"
-    ],
-    "arrow-body-style": [
-      2,
-      "as-needed"
-    ],
     "comma-dangle": [
       2,
       "always-multiline"
     ],
-    "import/imports-first": 0,
+    "import/imports-first": 2,
     "import/exports-last": 2,
     "import/newline-after-import": 0,
     "import/no-dynamic-require": 0,
@@ -49,18 +41,17 @@ module.exports = {
     "import/no-webpack-loader-syntax": 0,
 
     "max-depth": ["error", 5],
-    "max-nested-callbacks": ["error", 3],
+    "max-nested-callbacks": ["error", 2],
     "max-params": ["error", 3],
     "no-unexpected-multiline": "error",
     "consistent-return": "error",
+    "require-await": "error",
     "dot-notation": "error",
     "no-implicit-coercion": "error",
     "no-multi-spaces": "error",
     "no-return-assign": "error",
-    "no-return-await": "error",
     "no-useless-concat": "error",
     "no-useless-return": "error",
-    "callback-return": "error",
     "global-require": "error",
     "handle-callback-err": "error",
     "no-mixed-requires": "error",
@@ -68,10 +59,19 @@ module.exports = {
     "max-statements-per-line": ["error", {"max": 1}],
     "no-negated-condition": "error",
     "no-unneeded-ternary": "error",
+    "line-comment-position": ["error", { "position": "above" }],
     "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
     "max-len": ["error", { "code": 100 }],
+    "no-else-return": 0,
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignoreArrayIndexes": true,
+        "ignore": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      }
+    ]
     "zooshgroup/max-function-lines": ["error", { "maxLines": 30 }],
     "zooshgroup/no-commented-code": ["error"],
-    "zooshgroup/const-uppercase": ["error", { globalsOnly: true }]
+    "zooshgroup/const-uppercase": ["error", { globalsOnly: true }],
   }
 };
