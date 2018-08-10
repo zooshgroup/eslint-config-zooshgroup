@@ -11,11 +11,10 @@ module.exports = {
     "ecmaVersion": 8,
     "sourceType": "module",
   },
+  "settings": {
+    "import/ignore": ["node_modules"],
+  },
   "rules": {
-    "comma-dangle": [
-      2,
-      "always-multiline"
-    ],
     "import/imports-first": 2,
     "import/exports-last": 2,
     "import/newline-after-import": 0,
@@ -52,6 +51,8 @@ module.exports = {
     "no-return-assign": "error",
     "no-useless-concat": "error",
     "no-useless-return": "error",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
     "global-require": "error",
     "handle-callback-err": "error",
     "no-mixed-requires": "error",
