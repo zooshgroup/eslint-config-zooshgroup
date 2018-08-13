@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zooshgroup",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": {
     "name": "Barnabas Gema",
     "email": "barnabas.gema@zooshgroup.com"
@@ -19,7 +19,7 @@
     "eslint": "^5.0.0"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "13.0.0",
+    "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.13.0",
     "eslint-plugin-zooshgroup": "1.3.0"
   },
