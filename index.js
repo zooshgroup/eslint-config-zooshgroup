@@ -8,7 +8,7 @@ module.exports = {
     "zooshgroup"
   ],
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2018,
     "sourceType": "module",
   },
   "settings": {
